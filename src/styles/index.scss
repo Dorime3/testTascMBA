@@ -1,0 +1,35 @@
+@import "~normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;700&display=swap");
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body {
+    font-family: Mulish, sans-serif;
+    line-height: 120%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1;
+}
+h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 70px 0 90px;
+    text-align: center;
+    @media screen and (max-width: 460px) {
+        font-weight: 500;
+        font-size: 28px;
+        margin: 28px 15px;
+        text-align: left;
+    }
+}
+// .active {
+//     background-color: #ff3535;
+//     color: #fff;
+// }

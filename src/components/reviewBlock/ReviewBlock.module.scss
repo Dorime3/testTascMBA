@@ -1,0 +1,57 @@
+.review {
+    display: flex;
+    width: 100%;
+    margin: 100px 0 170px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footerBlock {
+    width: calc(50% - 15px);
+    min-width: 375px;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 50px 70px;
+    margin: 0 15px 20px;
+    h2 {
+        font-weight: bold;
+        font-size: 36px;
+    }
+    @media screen and (max-width: 460px) {
+        padding: 0 17px 40px;
+        h2 {
+            font-size: 25px;
+        }
+    }
+}
+
+.practiceModule {
+    background-color: #ff3535;
+    div {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 130%;
+    }
+}
+.finishAttestation {
+    background-color: #000;
+    ul {
+        list-style: none;
+        li {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 130%;
+            position: relative;
+        }
+        li::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: -15px;
+            width: 5px;
+            height: 5px;
+            background-color: #ff3535;
+            border-radius: 50%;
+        }
+    }
+}
