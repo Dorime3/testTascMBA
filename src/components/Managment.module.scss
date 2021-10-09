@@ -18,12 +18,16 @@
     width: 100%;
     flex-wrap: wrap;
 }
+
 .moduleStyle {
     display: flex;
     width: 50%;
     min-width: 375px;
     margin-top: 80px;
-
+    .toggleSymbol {
+        display: none;
+        z-index: 2;
+    }
     .moduleStep {
         min-width: 140px;
         position: relative;
@@ -68,6 +72,13 @@
         flex-wrap: wrap;
         margin: 0;
         position: relative;
+        .active {
+            background-color: #ff3535;
+            color: #fff;
+        }
+        .toggleSymbol {
+            display: block;
+        }
         .moduleStep {
             width: 100%;
             font-weight: 300;
@@ -75,7 +86,7 @@
             min-height: 50px;
             margin: 10px 15px;
             line-height: 50px;
-            padding-left: 30px;
+            padding-left: 35px;
         }
         .moduleStep::before {
             display: none;
@@ -83,7 +94,7 @@
         .toggleSymbol {
             position: absolute;
             top: 25px;
-            left: 15px;
+            left: 20px;
         }
     }
 }
