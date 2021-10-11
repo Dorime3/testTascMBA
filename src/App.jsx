@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getResponse } from './components/api/requestData';
-import { ProgramManagment } from './components/program/ProgramManagment';
+import { ProgramManagment } from './components/programModule/ProgramManagment';
 import { ReiewBlock } from './components/reviewBlock/ReiewBlock';
 
 const App = () => {
